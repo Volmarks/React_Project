@@ -31,7 +31,7 @@ const Todo = () => {
                             </li>
 
                             <li className={styles.link}>
-                                <Link to="/singup">Singup</Link>
+                                <Link to="/singup">Sign up</Link>
                             </li>
                         </ul>
                     )}

@@ -3,6 +3,8 @@ import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import styles from "./styles.module.css"
 
+const api_url = "https://todo-api-vy.herokuapp.com";
+
 const Signup = () => {
     const [data, setData] = useState({
         nickName: "",
@@ -21,7 +23,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const url = "http://localhost:8080/api/users"
+            const url = `${api_url}/api/users`
             const { data: res } = await axios.post(url, data)
             navigate("/login")
             console.log(res.message)
@@ -74,7 +76,7 @@ const Signup = () => {
                 {error && <div className={styles.error_msg}>{error}</div>}
                 <button type="submit"
                     className={styles.btn}>
-                    Sing Up
+                    Sign Up
                 </button>
             </form>
 
