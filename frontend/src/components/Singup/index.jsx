@@ -3,8 +3,8 @@ import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import styles from "./styles.module.css"
 
-const api_url = "https://todo-api-vy.herokuapp.com";
-
+const api_url = "http://localhost:8080";
+//https://todo-api-vy.herokuapp.com
 const Signup = () => {
     const [data, setData] = useState({
         nickName: "",

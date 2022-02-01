@@ -1,8 +1,8 @@
 import TodoModel from "../models/todo";
 import axios from "axios"
 
-const api_url = "https://todo-api-vy.herokuapp.com";
-//http://localhost:8080
+const api_url = "http://localhost:8080";
+//https://todo-api-vy.herokuapp.com
 const u_email = localStorage.getItem("user_email");
 
 export const addTodosAPI = async (todo: TodoModel) => {
